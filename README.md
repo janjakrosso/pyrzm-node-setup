@@ -1,11 +1,11 @@
 # pyrzm-node-setup
 Setup
 ```console
-# let's update our server
+# lets update our server
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip -y
 
-# let's upload go
+# lets upload go
 ! [ -x "$(command -v go)" ] && {
 VER="1.20.3"
 wget "https://golang.org/dl/go$VER.linux-amd64.tar.gz"
@@ -37,7 +37,7 @@ pryzmd config keyring-backend os
 pryzmd config chain-id indigo-1
 pryzmd init "test" --chain-id indigo-1
 
-# let's download genesis and addrbook respectively
+# lets download genesis and addrbook respectively
 wget -O $HOME/.pryzm/config/genesis.json https://testnet-files.itrocket.net/pryzm/genesis.json
 wget -O $HOME/.pryzm/config/addrbook.json https://testnet-files.itrocket.net/pryzm/addrbook.json
 ```
@@ -105,7 +105,7 @@ sudo systemctl restart pryzmd && sudo journalctl -u pryzmd -f
 ```
 Validator setup
 ```console
-# Let's create a wallet
+# Lets create a wallet
 pryzmd keys add name
 # Save your wallet information
 
